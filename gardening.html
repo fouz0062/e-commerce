@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tulip E-commerce - Gardening Tools</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">Tulip</div>
+        <div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="seeds.html">Seeds</a></li>
+              <li><a href="gardening.html">Gardening Tools</a></li>
+              <li>
+                <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="shop" class="products-section">
+        <h2>Gardening Tools Collection</h2>
+        <div class="products-container">
+          <!-- Product 1 -->
+          <div class="product-item">
+            <img src="images/pruning-shears.jpg" alt="Pruning Shears" />
+            <h1>Pruning Shears</h1>
+            <p class="price">$15.00</p>
+            <p class="description">
+              Durable pruning shears for trimming plants and flowers.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-item">
+            <img src="images/gardening-gloves.jpg" alt="Gardening Gloves" />
+            <h1>Gardening Gloves</h1>
+            <p class="price">$8.00</p>
+            <p class="description">
+              Comfortable gloves to protect your hands while gardening.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-item">
+            <img src="images/garden-trowel.jpg" alt="Garden Trowel" />
+            <h1>Garden Trowel</h1>
+            <p class="price">$10.00</p>
+            <p class="description">
+              Perfect for digging and planting in small garden beds.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Phone: +91 123457986</p>
+          <p>Email: tulipstore@gmail.com</p>
+          <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="footer-section">
+          <form class="newsletter-form">
+            <input type="email" placeholder="Subscribe to our newsletter" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-list").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>

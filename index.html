@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tulip E-commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">Tulip</div>
+        <div>
+          <i class="fa-solid fa-bars hamburger"></i>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="./seeds.html">Seeds</a></li>
+              <li><a href="./gardening.html">Gardening</a></li>
+              <li>
+                <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section for Products -->
+    <main>
+      <section id="shop" class="products-section">
+        <h2>Shop Our Products</h2>
+        <div class="products-container">
+          <!-- Product 1 -->
+          <div class="product-item">
+            <img src="images/white-fantasy.jpg" alt="White Fantasy" />
+            <h1>Bouquet "White Fantasy"</h1>
+            <p class="price">$45.00</p>
+            <p class="description">
+              A bouquet of stunning white flowers, perfect for any occasion.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-item">
+            <img src="images/peonies.jpg" alt="Peonies" />
+            <h1>Bouquet "Peonies"</h1>
+            <p class="price">$55.00</p>
+            <p class="description">
+              Elegant pink peonies arranged to perfection for your loved one.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-item">
+            <img src="images/spring.jpg" alt="Spring" />
+            <h1>Bouquet "Spring"</h1>
+            <p class="price">$50.00</p>
+            <p class="description">
+              Celebrate the beauty of spring with this fresh and vibrant
+              bouquet.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Phone: +91 123457986</p>
+          <p>Email: tulipstore@gmail.com</p>
+          <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="footer-section">
+          <form class="newsletter-form">
+            <input type="email" placeholder="Subscribe to our newsletter" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-list").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
