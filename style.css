@@ -175,7 +175,7 @@ img {
 }
 
 .newsletter-form input::placeholder {
-  padding: 1rem 0.2rem;
+  padding: 1rem;
 }
 
 .newsletter-form button {
@@ -203,21 +203,26 @@ img {
     flex-direction: column;
     gap: 0;
   }
-
+  .parent {
+    position: relative;
+  }
   .nav-list.show {
     display: flex;
     background-color: rgba(239, 67, 93, 0.7);
     padding: 1rem;
     position: absolute;
-    right: 1rem;
-    top: 4rem;
+    right: 0rem;
+    top: 2rem;
+    border-radius: 5px;
   }
 
   .hamburger {
     display: block;
     color: white;
   }
-
+  .hamburger.show {
+    color: #ef435d;
+  }
   .header-container {
     justify-content: space-between;
   }
@@ -240,6 +245,6 @@ img {
   }
 
   .newsletter-form {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }

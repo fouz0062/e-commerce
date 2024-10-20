@@ -23,7 +23,7 @@
     <header>
       <div class="header-container">
         <div class="logo">Tulip</div>
-        <div>
+        <div class="parent">
           <i class="fa-solid fa-bars hamburger"></i>
           <nav>
             <ul class="nav-list">
@@ -106,6 +106,7 @@
         .querySelector(".hamburger")
         .addEventListener("click", function () {
           document.querySelector(".nav-list").classList.toggle("show");
+          document.querySelector(".hamburger").classList.toggle("show");
         });
     </script>
   </body>
